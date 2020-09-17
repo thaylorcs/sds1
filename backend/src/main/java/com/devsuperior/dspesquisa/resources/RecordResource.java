@@ -35,7 +35,7 @@ public class RecordResource {
 	@GetMapping
 	public ResponseEntity<Page<RecordDTO>> findAll(			
 			@RequestParam(value = "min", defaultValue = "") String min,
-			@RequestParam(value = "max", defaultValue = "moment") String max,			
+			@RequestParam(value = "max", defaultValue = "") String max,			
 			@RequestParam(value = "page", defaultValue = "0") Integer page,
 			@RequestParam(value = "linesPerPage", defaultValue = "0") Integer linesPerPage,
 			@RequestParam(value = "orderBy", defaultValue = "moment") String orderBy,
