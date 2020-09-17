@@ -27,6 +27,9 @@ public class Game implements Serializable {
 	private String title;
 	private Platform platform;
 	
+	//Evitar erro ao criar json da requisição
+	//@JsonIgnore
+	
 	//Mapeamento de referência de objetos
 	@ManyToOne
 	@JoinColumn(name = "genre_id")
