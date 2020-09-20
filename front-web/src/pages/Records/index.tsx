@@ -6,7 +6,8 @@ import { formatDate } from './helpers';
 import Pagination from './Pagination';
 import Filters from '../../components/Filters'
 
-const BASE_URL = 'http://localhost:8080'
+// const BASE_URL = 'http://localhost:8080'
+const BASE_URL = 'https://sds1-thaylor.herokuapp.com';
 
 const Records = () => {
     // criando um estado interno pro componente  - React Hooks e armazena o valor pra popular a tabela

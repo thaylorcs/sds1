@@ -22,7 +22,8 @@ const initialPieData = {
     series: []
 }
 
-const BASE_URL = 'http://localhost:8080'
+// const BASE_URL = 'http://localhost:8080';
+const BASE_URL = 'https://sds1-thaylor.herokuapp.com';
 
 const Charts = () => {
     
@@ -57,8 +58,8 @@ const Charts = () => {
                         <Chart 
                             options={barOptions}
                             type="bar"
-                            width="500"
-                            height="650"
+                            width="680"
+                            height="670"
                             series={[{ data: barChartData}]}
                         />
                     </div>
@@ -78,6 +79,7 @@ const Charts = () => {
                             options={{ ...pieOptions, labels: genderData.labels}}
                             type="donut"
                             series={genderData?.series}
+
                         />
                     </div>
                 </div>                
