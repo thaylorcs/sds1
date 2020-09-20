@@ -6,12 +6,12 @@ import {useNavigation} from '@react-navigation/native';
 const Header = () => {
   const navigation = useNavigation();
 
-    const HandleOnPress = () => {
+    const handleOnPress = () => {
       navigation.navigate('Home');
     }
 
   return (
-      <TouchableWithoutFeedback onPress={HandleOnPress}>
+      <TouchableWithoutFeedback onPress={handleOnPress}>
         <View style={styles.header}>
             <Image  source={require('../../assets/logo.png')} />
             <Text style={styles.textLogo1}>Big Game</Text>
